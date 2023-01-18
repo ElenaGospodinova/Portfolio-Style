@@ -1,0 +1,189 @@
+body {
+    color:aliceblue;
+    margin: auto;
+    font-family:'Kanit', sans-serif;
+    background: linear-gradient(0deg, rgb(222, 181, 239) 0%, rgb(112, 69, 220) 100%);
+}
+h1 {
+    font-size: 3rem;
+    
+    text-transform: uppercase;
+}
+
+#logo   {
+    position: relative;
+    float:left;
+    width: 50px;
+    margin: -10px 5px 1px 12px;
+}
+#brand {
+    width: 50px;
+    margin-right: 700px;
+    font-family: 'Explora', cursive, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+}
+nav {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    padding: 23px;
+    background: linear-gradient(0deg, rgb(171, 93, 231) 20%, rgb(65, 7, 131) 100%);
+    
+}
+nav ul {
+    padding: 12px;
+    margin: -20px;
+}
+nav ul li {
+    display: inline;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    
+}
+a, a:visited {
+    text-decoration: none;
+    color: rgb(221, 221, 235);
+    margin-left: 40px;
+    
+}
+nav ul li a:hover {
+    color: rgb(172, 9, 93);
+}
+
+img, video {
+    border-radius: 11%;
+    margin-top: 125px;
+}
+.parallax {
+    text-align: center;
+    background-image: url("./img/idea.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+/*responsive settings need to be add  for the web*** */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
+
+p {
+    text-align: center;
+    font-size: medium;
+}
+
+footer {
+    background: linear-gradient(0deg, rgb(171, 93, 231) 20%, rgb(65, 7, 131) 100%);
+    text-align: center;
+    height: 200px;
+    padding: 40px;
+    color: aliceblue;
+    font-size: x-large;
+    font-weight: bolder;
+}
+/*rem doubling the size - 16px = 2rem*/
+
+/* Projects section - boxes style*/
+.flip-box {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-left: 40px;
+}
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back, .flip-box-back-travel, .flip-box-back-epape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: rgb(52, 70, 129);
+    border-radius: 12%;
+    color: rgb(250, 250, 242);
+    height: 330px;
+    width: 330px;
+  }
+  
+  .flip-box-back, .flip-box-back-travel, .flip-box-back-epape{
+    border-radius: 12%;
+    width: 300px;
+    height: 300px;
+    color: white;
+    margin-left: 6px;
+    padding: -30px;
+    transform: rotateY(180deg);
+  }
+  .flip-box-back {
+    background-image: url("./img/South-East Asia.png");
+   
+}
+  /*positioning travel-flip-box*/
+  #travel {
+      margin: 500px;
+      margin-top: -219px;
+      padding: 10px;
+      
+      
+  }
+ .flip-box-back-travel {
+    background: url("./img/Travel.jpg") no-repeat;
+    /*background-size: 430px;*/
+    background-size: cover;
+    border-radius: 12%;
+    margin: -538px;
+    margin-top: -200px;
+    width: 420px;
+    height: 320px;
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+   
+ }
+.button-video {
+    border-radius: 22%;
+    background-color: rgb(60, 3, 158);
+    width: 120px;
+    font-size: medium;
+    text-align: center;
+    margin: 20px;
+}
+#epape-ltd{
+    margin: 1000px;
+    margin-top: -409px;
+    padding: 10px;
+}
+.flip-box-back-epape {
+    background: url("./img/EPAPE.png") no-repeat;
+    background-size: cover;
+    border-radius: 12%;
+    margin: -1078px;
+    margin-top: -410px;
+    width: 410px;
+    height: 335px;
+    transform: rotateY(180deg);
+}
+/**************Last box Energy Fitness Camp - to be updated with the full video + styling *****************/
+
+ 
